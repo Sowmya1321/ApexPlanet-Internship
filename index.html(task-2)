@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamScape – Travel Wishlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <section class="gallery-section">
+      <h2>🌍 Travel Inspiration Gallery</h2>
+      <div class="gallery">
+        <img src="C:\Users\ASUS\OneDrive\Desktop\greceee.jpg" alt="Greece" />
+        <img src="C:\Users\ASUS\OneDrive\Desktop\switzerland.jpg" alt="Switzerland" />
+        <img src="C:\Users\ASUS\OneDrive\Desktop\dubai.jpg" alt="Dubai" />
+        <img src="C:\Users\ASUS\OneDrive\Desktop\maldives.jpg" alt="Maldives" />
+        <img src="C:\Users\ASUS\OneDrive\Desktop\aurora.jpg" alt="Aurora" />
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>📝 Dream Travel List</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Add a dream destination..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="contact-section">
+      <h2>📬 Connect with Us</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Full Name" required />
+        <input type="email" id="email" placeholder="Your Email Address" required />
+        <input type="text" id="interest" placeholder="Dream Destination" required />
+        <input type="text" id="phone" placeholder="Your Contact Number (Optional)" />
+        <textarea id="message" placeholder="Any specific travel plans or queries?"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
