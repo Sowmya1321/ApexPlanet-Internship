@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuizGlide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 QuizGlide</h1>
+    <p>Explore. Answer. Learn!</p>
+  </header>
+
+  <main>
+    <section id="quiz-container">
+      <div id="quiz-box">
+        <h2 id="question-title">Question will appear here</h2>
+        <div id="options-container"></div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+      </div>
+      <p id="score-display"></p>
+    </section>
+
+    <section id="end-screen" style="display:none;">
+      <h2>🎉 Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <button onclick="startNewQuiz()">Start New Quiz</button>
+      <button onclick="viewHistory()">View Previous Results</button>
+    </section>
+
+    <section id="history-section" style="display:none;">
+      <h3>📜 Previous Quiz Results</h3>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <footer>Designed by ApexPlanet • Task 3</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
