@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeChef Organizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>HomeChef Organizer</h1>
+    <nav>
+      <a href="#shop">Shop Ingredients</a>
+      <a href="#todo">Meal Planner</a>
+      <a href="#tips">Tips & Recipes</a>
+      <a href="#cart" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section id="shop">
+    <h2>Shop Ingredients</h2>
+    <div class="controls">
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="vegetable">Vegetables</option>
+        <option value="spice">Spices</option>
+        <option value="grain">Grains</option>
+      </select>
+      <select id="sortPrice">
+        <option value="asc">Price: Low to High</option>
+        <option value="desc">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="productList" class="product-grid"></div>
+  </section>
+
+  <section id="todo">
+    <h2>Meal Planner</h2>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Add kitchen task..." required>
+      <button type="submit">Add</button>
+    </form>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="tips">
+    <h2>Cooking Tips & Recipes</h2>
+    <div class="tips">
+      <p><strong>• Boil pasta with a dash of olive oil</strong> to keep it from sticking.</p>
+      <p><strong>• Store herbs</strong> in a glass of water like flowers to keep them fresh longer.</p>
+      <p><strong>• Use a splash of lemon</strong> to enhance vegetable flavors.</p>
+    </div>
+  </section>
+
+  <div id="cartPanel" class="cart-panel">
+    <h3>Your Cart</h3>
+    <ul id="cartItems"></ul>
+    <p id="totalAmount">Total: ₹0</p>
+    <button id="closeCart">Close</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 HomeChef Organizer | Cooking made simple!</p>
+  </footer>
+</body>
+</html>
